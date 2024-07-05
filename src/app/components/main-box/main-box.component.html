@@ -1,5 +1,9 @@
-<div>
+<div class="div">
     <div class="mainBox">
+        <div class="input">
+            <input type="text" [(ngModel)] = "expense" placeholder="Expense ">
+            <input type="text" [(ngModel)] = "INR" placeholder="INR">
+        </div>
     </div>
-    <app-button text="Add Expense"></app-button>
+    <app-button (buttonClick)="addExpense()" text="Add Expense"></app-button>
 </div>

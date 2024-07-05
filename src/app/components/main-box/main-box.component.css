@@ -8,8 +8,25 @@
     margin: 0;
 }
 
-div{
+.div{
     height: 55vh;
     margin-top: 1.5rem;
     position: relative;
 }
+
+.input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 5px 0px 5px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: #292524;
+}
+
