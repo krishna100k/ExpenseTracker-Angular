@@ -4,6 +4,13 @@
             <input type="text" [(ngModel)] = "expense" placeholder="Expense ">
             <input type="text" [(ngModel)] = "INR" placeholder="INR">
         </div>
+        <div class="items">
+            <ul type = "none">
+                <li *ngFor="let expense of expenses">
+                    {{ expense.expense }} - {{ expense.INR }}
+                </li>
+            </ul>
+        </div>
     </div>
     <app-button (buttonClick)="addExpense()" text="Add Expense"></app-button>
 </div>
