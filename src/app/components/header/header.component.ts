@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title : string = "Angular Expense Tracker"
+  
 }
