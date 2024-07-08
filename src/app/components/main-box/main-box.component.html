@@ -2,12 +2,13 @@
     <div class="mainBox">
         <div class="input">
             <input type="text" [(ngModel)] = "expense" placeholder="Expense ">
-            <input type="text" [(ngModel)] = "INR" placeholder="INR">
+            <input type="number" [(ngModel)] = "INR" placeholder="INR">
         </div>
         <div class="items">
-            <ul type = "none">
-                <li *ngFor="let expense of expenses">
-                    {{ expense.expense }} - {{ expense.INR }}
+            <ul class="listContainer" type = "none">
+                <li class="listItem" *ngFor="let item of expenses">
+                    <p>{{ item.expense }} - {{ item.INR }}</p>
+                    <button (click)="deleteExpense(item.id)" class="deleteButton">X</button>
                 </li>
             </ul>
         </div>

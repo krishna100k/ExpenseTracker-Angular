@@ -6,6 +6,7 @@
     border-radius: 5px;
     position: relative;
     margin: 0;
+    overflow-y: scroll;
 }
 
 .div{
@@ -28,5 +29,36 @@ input{
     padding: 0.5rem;
     border-radius: 4px;
     background-color: #292524;
+}
+
+.listItem{
+    border-bottom: solid gray 1px;
+    width: 100%;
+    background: none;
+    padding: .5rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 1rem;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+
+.deleteButton{
+    background-color: #EA580C;
+    cursor: pointer;
+    border: none;
+    width: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
