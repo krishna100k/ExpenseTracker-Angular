@@ -1,8 +1,8 @@
-<div class="div">
+<form [formGroup]="expenseForm" class="div">
     <div class="mainBox">
         <div class="input">
-            <input type="text" [(ngModel)] = "expense" placeholder="Expense ">
-            <input type="number" [(ngModel)] = "INR" placeholder="INR">
+            <input formControlName="expense" type="text" [(ngModel)] = "expense" placeholder="Expense ">
+            <input formControlName="INR" type="number" [(ngModel)] = "INR" placeholder="INR">
         </div>
         <div class="items">
             <ul class="listContainer" type = "none">
@@ -14,4 +14,4 @@
         </div>
     </div>
     <app-button (buttonClick)="addExpense()" text="Add Expense"></app-button>
-</div>
+</form>
